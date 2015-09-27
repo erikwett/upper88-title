@@ -39,7 +39,7 @@ Or [download as ZIP](https://github.com/erikwett/upper88-title/archive/master.zi
     Avoid typing the same title twice:
 
     ```html
-    <h1><upper88-title>My <b>cool</b> Homepage</upper88-title></h1>
+    <h1><upper88-title>My <strong>cool</strong> Homepage</upper88-title></h1>
      ```
      
      Set title as an attribute:
@@ -56,18 +56,7 @@ Or [download as ZIP](https://github.com/erikwett/upper88-title/archive/master.zi
 
 Attribute     | Options     | Default      | Description
 ---           | ---         | ---          | ---
-<<<<<<< HEAD
 value         | *String*    | none         | The title. Set as both element innerHtml and document.title
-=======
-rows          | *Array*     | none         | An array of arrays. First value in each array is the text,second is the value
-options       | *Object*    |              | Options. Current options are: maxFont (default 24), minFont (default 12)
-
-## Methods
-
-Method        | Returns      | Description
----           | ---          | ---
-drawChart()   | Returns null.| Draws the chart. Called automatically on first load and whenever one of the attributes changes. Can be called manually to handle e.g. page resizes, tab navigation etc.
->>>>>>> origin/master
 
 ## History
 
