@@ -1,0 +1,17 @@
+{
+    "name": "upper88-title",
+    "version": "0.1.0beta",
+    "description": "Title Custom Element",
+    "license": "MIT",
+    "main": "upper88-title.html",
+    "keywords": [
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "bower_components"
+    ],
+    "dependencies": {
+        "webcomponentsjs": "^0.7.2"
+    }
+}

@@ -1,0 +1,40 @@
+<!--
+`upper88-title` Sets document title
+
+Used statically, just to avoid typing the same text both in the body and in the header title:
+
+    <upper88-title>My Home Page</upper88-title>
+
+Used Dynamically, changing the 'value' attribute will update both page and document title:
+    <upper88-title value="My Home Page"></upper88-title>
+
+Used with polymer data binding, allows you ta make data binding to document title:
+    <upper88-title value="[[title]]"></upper88-title>
+
+-->
+<script>
+	(function() {
+		var element = Object.create(HTMLElement.prototype);
+
+		element.attachedCallback = function() {
+            render(this);
+		};
+
+		element.attributeChangedCallback = function(attr, oldVal, newVal) {
+			render(this);
+		};
+		// Registers custom element
+		document.registerElement('upper88-title', {
+			prototype: element
+		});
+		//implementation
+		function render(element) {
+			if (element.hasAttribute("value")) {
+				var value = element.getAttribute("value");
+                element.innerHTML = value;
+			}
+            document.title = element.innerText || element.textContent;
+		}
+
+	}());
+</script>

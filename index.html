@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Imports polyfill -->
+    <script src="../webcomponentsjs/webcomponents.min.js"></script>
+
+    <!-- Imports custom element -->
+    <link rel="import" href="upper88-title.html">
+    <style>
+        
+    </style>
+    <script>
+        function setTitle(){
+            var elemen = document.querySelector('upper88-title'),
+                input = document.querySelector('input');
+            elemen.setAttribute("value",input.value);
+        }
+    </script>
+</head>
+
+<body>
+    <h1><upper88-title>upper88-title <em>brilliant</em> demo</upper88-title></h1>
+    <input id="in" type="text" placeholder="Enter new title">
+    <button onclick="setTitle()">Set</button>
+    <!-- Runs custom element -->
+    
+
+</body>
+
+</html>
