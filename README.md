@@ -6,9 +6,7 @@
 >
 
 
-## Demo
 
-[Check it live!](http://upper88.com/#!/wordcloud) 
 
 ## Install
 
@@ -46,7 +44,7 @@ Or [download as ZIP](https://github.com/erikwett/upper88-title/archive/master.zi
      ```html
     <upper88-title value="My Homepage"></upper88-title>
      ```
-     
+     Use data binding for the tritle>
      ```html
     <upper88-title value="[[title]]"></upper88-title>
     
