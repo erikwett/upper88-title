@@ -5,8 +5,9 @@
 > Makes it possible to use Polymer data binding for the title.
 >
 
+## Demo
 
-
+[Check it live!](http://upper88.com) 
 
 ## Install
 
@@ -54,7 +55,7 @@ Or [download as ZIP](https://github.com/erikwett/upper88-title/archive/master.zi
 
 Attribute     | Options     | Default      | Description
 ---           | ---         | ---          | ---
-value         | *String*    | none         | The title. Set as both element innerHtml and document.title
+value         | *String*    | none         | The title. Set as both element innerHtml and (without html tags) document.title
 
 ## History
 
